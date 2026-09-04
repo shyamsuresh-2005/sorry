@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm Sorry, Sharmila | Shyam's Heart</title>
+  <meta name="description" content="A deeply romantic, sincere apology and unconditional love letter from Shyam to Sharmila. Always waiting for you.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <!-- Ambient Particle & Heart Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Background Glow Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Glass Navbar -->
+  <nav class="navbar glass">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <i class="fa-solid fa-heart brand-heart"></i>
+        <span>Shyam <span class="heart-sep">&amp;</span> Sharmila</span>
+      </div>
+      
+      <div class="nav-actions">
+        <button id="music-toggle" class="nav-btn" aria-label="Play Night Changes Song">
+          <i class="fa-solid fa-compact-disc"></i>
+          <span class="btn-text">Night Changes 🎵</span>
+          <span class="music-wave-bars">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+        
+        <a href="#letter-section" class="nav-btn nav-btn-primary">
+          <i class="fa-solid fa-envelope-open-text"></i>
+          <span>Read Letter</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      
+      <div class="hero-badge animate-fade-down">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>A Message From The Heart</span>
+      </div>
+
+      <div class="heart-pulse-container animate-pulse-glow">
+        <svg class="hero-heart-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 88.5C50 88.5 15 63.5 15 36.5C15 23.5 24.5 14 36.5 14C43.5 14 48 18 50 21C52 18 56.5 14 63.5 14C75.5 14 85 23.5 85 36.5C85 63.5 50 88.5 50 88.5Z" 
+                fill="url(#heart-grad)" stroke="url(#stroke-grad)" stroke-width="2"/>
+          <defs>
+            <linearGradient id="heart-grad" x1="15" y1="14" x2="85" y2="88.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF4D8D"/>
+              <stop offset="1" stop-color="#E5B869"/>
+            </linearGradient>
+            <linearGradient id="stroke-grad" x1="15" y1="14" x2="85" y2="88.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFD1DC"/>
+              <stop offset="1" stop-color="#FF4D8D"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="pulse-ring"></div>
+      </div>
+
+      <h1 class="hero-title">
+        I'm Sorry, <span class="gradient-text cursive-name">Sharmila</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        "Because a life without you isn't a life I want to live."
+      </p>
+
+      <div class="hero-typing-box glass">
+        <i class="fa-solid fa-quote-left quote-icon-left"></i>
+        <span id="hero-typing-text"></span><span class="typing-cursor">|</span>
+        <i class="fa-solid fa-quote-right quote-icon-right"></i>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#apology-section" class="btn btn-glow">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <span>Read Shyam's Promises</span>
+        </a>
+        <a href="#forgive-section" class="btn btn-outline">
+          <i class="fa-solid fa-dove"></i>
+          <span>Will You Forgive Me?</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="scroll-down-indicator">
+      <span>Scroll for Sharmila</span>
+      <i class="fa-solid fa-chevron-down bouncing-chevron"></i>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+
+    <!-- Section: Acknowledging Her Fear & Family Pressure -->
+    <section id="apology-section" class="section-block">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-shield-heart"></i> Understanding &amp; Respect</span>
+        <h2 class="section-title">I Understand Your Fear, Sharmila</h2>
+        <p class="section-subtitle">Your peace, your dignity, and your comfort will always come before everything else.</p>
+      </div>
+
+      <div class="fear-cards-grid">
+        <div class="fear-card glass">
+          <div class="fear-icon-wrapper">
+            <i class="fa-solid fa-hands-holding-heart"></i>
+          </div>
+          <h3>Respecting Your Family &amp; Stress</h3>
+          <p>
+            I know the weight you carry on your shoulders—the expectations of your father, your family's status, and societal pressures. I never want to be the source of your anxiety or fear. Shyam completely respects every boundary you set.
+          </p>
+        </div>
+
+        <div class="fear-card glass highlight-card">
+          <div class="fear-icon-wrapper">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h3>Unconditional &amp; Unwavering Love</h3>
+          <p>
+            Caste, background, and societal boundaries mean nothing compared to the truth of what I feel for you. But even in this, I will protect your peace first. My love is not a condition or a burden—it is a safe harbor for whenever you feel lost.
+          </p>
+        </div>
+
+        <div class="fear-card glass">
+          <div class="fear-icon-wrapper">
+            <i class="fa-solid fa-hourglass-half"></i>
+          </div>
+          <h3>Always Waiting For You</h3>
+          <p>
+            Whether it takes days, months, or years, Shyam is here. Whenever you need someone to listen without judgment, whenever you need strength or safety, remember: <strong>I will be waiting for you always.</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Deeply Romantic Apology Letter -->
+    <section id="letter-section" class="section-block">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-feather-pointed"></i> Written From My Soul</span>
+        <h2 class="section-title">My Dearest Sharmila...</h2>
+        <p class="section-subtitle">Please read these words when you are quiet and peaceful.</p>
+      </div>
+
+      <div class="letter-container glass parchment-style">
+        <div class="letter-seal">
+          <i class="fa-solid fa-stamp"></i>
+        </div>
+
+        <div class="letter-header-meta">
+          <span class="letter-to">To: My Sharmila 💖</span>
+          <span class="letter-from">From: Shyam</span>
+        </div>
+
+        <div class="letter-body">
+          <p class="letter-salutation">My Dearest Sharmila,</p>
+
+          <p>
+            If these words find you in a moment of stress or worry, please take a deep breath. Before anything else, I want you to know that your peace and happiness mean more to me than my own breath. If I have ever caused you pain, confusion, or added even a single drop of fear to your life, I am deeply, profoundly sorry from the bottom of my heart.
+          </p>
+
+          <p>
+            I see how much stress you carry. I see the invisible weight of family expectations, the fear regarding your father, caste, and societal pressures that feel like an overwhelming mountain. I want to tell you clearly and unequivocally: <strong>I understand your fear, and I respect it completely.</strong> I will never be someone who pressures you, forces you into impossible choices, or causes a tear in your eyes.
+          </p>
+
+          <div class="letter-quote-callout">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>
+              "Because a life without you isn't a life I want to live. But a life where you are safe and happy is the only thing I will ever fight for."
+            </p>
+          </div>
+
+          <p>
+            My love for you, Sharmila, is true, unselfish, and unwavering. It is not conditioned on circumstances or societal approval. If you need space, I will grant it. If you need time to heal, I will guard your solitude. But please know this truth in your soul: <strong>whenever you need me, wherever you are, Shyam will be waiting for you.</strong>
+          </p>
+
+          <p>
+            I am ready to stand as your shield against every storm, to walk through every difficulty with patience, and to earn every ounce of trust and respect from your loved ones. You are my first thought in the morning and my last prayer at night.
+          </p>
+
+          <p class="letter-closing">
+            Forever and unconditionally yours,<br>
+            <span class="cursive-signature">Shyam</span>
+          </p>
+        </div>
+
+        <div class="letter-footer-actions text-center">
+          <button id="open-letter-modal-btn" class="btn btn-small btn-gold">
+            <i class="fa-solid fa-expand"></i>
+            <span>Read In Fullscreen Parchment</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Night Changes Romantic Song Player & Soundscape Visualizer -->
+    <section class="section-block">
+      <div class="audio-player-card glass text-center">
+        <div class="audio-visualizer-container">
+          <div class="visualizer-header">
+            <i class="fa-solid fa-compact-disc vinyl-icon spinning-vinyl"></i>
+            <div class="track-info">
+              <h4 id="audio-track-title">"Night Changes" — One Direction 🎵</h4>
+              <p id="audio-track-subtitle">"It will never change me and you..."</p>
+            </div>
+          </div>
+          
+          <div class="song-lyrics-quote">
+            <i class="fa-solid fa-music"></i>
+            <span>"Does it ever drive you crazy just how fast the night changes? Everything that you've ever dreamed of... it will never change me and you."</span>
+          </div>
+
+          <!-- Live Audio Canvas Visualizer -->
+          <canvas id="audio-visualizer-canvas" width="600" height="70"></canvas>
+
+          <div class="audio-controls">
+            <button id="play-song-btn" class="audio-control-btn play-btn" aria-label="Play Night Changes Song">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <div class="audio-progress-bar">
+              <div id="audio-progress-fill" class="progress-fill"></div>
+            </div>
+            <span id="audio-time-display" class="time-display">0:00 / 3:46</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Interactive 'Reasons I Need You' Cards -->
+    <section class="section-block">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-gem"></i> Why You Are Irreplaceable</span>
+        <h2 class="section-title">Reasons I Need You, Sharmila</h2>
+        <p class="section-subtitle">Click each card to reveal what my heart holds for you.</p>
+      </div>
+
+      <div class="reasons-grid">
+        
+        <div class="reason-card glass-card-interactive" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+              <h3>Your Gentle Smile</h3>
+              <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to reveal</span>
+            </div>
+            <div class="card-back">
+              <i class="fa-solid fa-quote-left quote-bg"></i>
+              <p>"In the middle of my darkest days, a single glance at your smile turns everything into light. Your laughter is my favorite song."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reason-card glass-card-interactive" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <h3>Your Comfort &amp; Peace</h3>
+              <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to reveal</span>
+            </div>
+            <div class="card-back">
+              <i class="fa-solid fa-quote-left quote-bg"></i>
+              <p>"With you, I don't have to pretend. Your presence gives me a calm and safety that I have never felt anywhere else in this universe."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reason-card glass-card-interactive" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>My Vow To Protect You</h3>
+              <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to reveal</span>
+            </div>
+            <div class="card-back">
+              <i class="fa-solid fa-quote-left quote-bg"></i>
+              <p>"I promise to protect your dignity, respect your family's peace, and stand by your side against any pressure or fear."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reason-card glass-card-interactive" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-icon"><i class="fa-solid fa-infinity"></i></div>
+              <h3>Unwavering Patience</h3>
+              <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to reveal</span>
+            </div>
+            <div class="card-back">
+              <i class="fa-solid fa-quote-left quote-bg"></i>
+              <p>"Love isn't in a hurry. Whenever you are ready, whenever you need me, Sharmila, Shyam will be waiting without hesitation."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reason-card glass-card-interactive" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3>Our Beautiful Dreams</h3>
+              <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to reveal</span>
+            </div>
+            <div class="card-back">
+              <i class="fa-solid fa-quote-left quote-bg"></i>
+              <p>"Every future I imagine has you in it. Building a life filled with kindness, dignity, mutual respect, and infinite warmth."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reason-card glass-card-interactive" tabindex="0">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
+              <h3>Pure &amp; True Love</h3>
+              <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to reveal</span>
+            </div>
+            <div class="card-back">
+              <i class="fa-solid fa-quote-left quote-bg"></i>
+              <p>"My love for you is not a fleeting emotion. It is a lifelong commitment of truth, devotion, and unconditional care."</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section: The Interactive Forgiveness Question -->
+    <section id="forgive-section" class="section-block text-center">
+      <div class="forgive-box glass glow-box">
+        <div class="forgive-header">
+          <div class="big-heart-badge">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h2 class="forgive-title">Will you give Shyam another chance?</h2>
+          <p class="forgive-subtitle">Take your time. Listen to your heart...</p>
+        </div>
+
+        <div class="forgive-buttons-area" id="button-dodge-container">
+          <button id="yes-btn" class="btn btn-yes btn-large glow-effect">
+            <i class="fa-solid fa-heart"></i>
+            <span>Yes, I Will 💖</span>
+          </button>
+
+          <button id="no-btn" class="btn btn-no btn-large">
+            <i class="fa-solid fa-face-sad-tear"></i>
+            <span id="no-btn-text">No...</span>
+          </button>
+        </div>
+
+        <div id="dodge-message" class="dodge-hint-text">
+          (Hovering over 'No' might make it dodge you... because Shyam won't give up on loving you!)
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Response & Feedback Form (Connected to Gmail 10439shyamsuresh@gmail.com) -->
+    <section id="response-section" class="section-block">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Send Shyam A Direct Message</span>
+        <h2 class="section-title">Leave Your Response For Shyam</h2>
+        <p class="section-subtitle">Your message goes directly to Shyam's personal inbox (10439shyamsuresh@gmail.com)</p>
+      </div>
+
+      <div class="response-card glass">
+        <form id="sharmila-response-form" class="response-form">
+          <!-- Web3Forms API Hidden Keys -->
+          <input type="hidden" name="access_key" value="0faefb1f-e3c3-4d7e-97ef-d4d126fbff4e">
+          <input type="hidden" name="subject" value="💖 Sharmila Sent You A Message From The Apology Website!">
+          <input type="hidden" name="from_name" value="Apology Website Response">
+          <input type="hidden" name="to_email" value="10439shyamsuresh@gmail.com">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sender-name"><i class="fa-solid fa-user-heart"></i> Your Name / Nickname</label>
+              <input type="text" id="sender-name" name="name" placeholder="Sharmila..." required value="Sharmila">
+            </div>
+
+            <div class="form-group">
+              <label for="sender-emotion"><i class="fa-solid fa-face-smile"></i> How are you feeling right now?</label>
+              <select id="sender-emotion" name="emotion" class="form-select">
+                <option value="I forgive you 💖" selected>I forgive you Shyam 💖</option>
+                <option value="I need some time ⏳">I need a little more time ⏳</option>
+                <option value="I want to talk to you 📞">I want to talk to you 📞</option>
+                <option value="Always in my heart 🌸">Always in my heart 🌸</option>
+                <option value="Custom Message 💌">Custom Response 💌</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="sender-message"><i class="fa-solid fa-comment-dots"></i> Your Personal Message To Shyam</label>
+            <textarea id="sender-message" name="message" rows="4" placeholder="Write whatever is in your heart... Shyam is listening." required></textarea>
+          </div>
+
+          <div class="form-actions text-center">
+            <button type="submit" id="submit-response-btn" class="btn btn-glow btn-large">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Message To Shyam's Gmail</span>
+            </button>
+          </div>
+
+          <div id="form-status-msg" class="form-status"></div>
+        </form>
+
+        <div class="local-log-toggle text-center">
+          <button id="view-local-messages-btn" class="btn-link">
+            <i class="fa-solid fa-box-archive"></i> View Sent Messages Log
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer glass-footer">
+    <div class="footer-content text-center">
+      <div class="footer-heart">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <h3 class="footer-title">"I Will Be Waiting For You Always, Sharmila."</h3>
+      <p class="footer-desc">Whenever you need me, Shyam is right here. My love for you is true.</p>
+      <p class="footer-copyright">&copy; Made with eternal love by Shyam for Sharmila.</p>
+    </div>
+  </footer>
+
+  <!-- Modal 1: Forgiveness YES Success Popup Modal -->
+  <div id="yes-modal" class="modal-overlay hidden">
+    <div class="modal-card glass text-center">
+      <button class="modal-close-btn" id="close-yes-modal">&times;</button>
+      <div class="modal-heart-icon animate-bounce">
+        <i class="fa-solid fa-heart-circle-check"></i>
+      </div>
+      <h2 class="gradient-text">Thank You, Sharmila! 💖</h2>
+      <p class="modal-lead">
+        My heart is overflowing with gratitude. Thank you for giving Shyam your trust and another chance.
+      </p>
+      <div class="modal-quote">
+        "I promise to love you, respect your family and fear, and stand by your side forever. Whenever you need me, I'll be there."
+      </div>
+      <div class="modal-actions">
+        <a href="#response-section" id="modal-send-msg-link" class="btn btn-glow">
+          <i class="fa-solid fa-paper-plane"></i> Send Shyam A Note
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Full Parchment Letter Modal -->
+  <div id="letter-modal" class="modal-overlay hidden">
+    <div class="modal-card glass parchment-style modal-large">
+      <button class="modal-close-btn" id="close-letter-modal">&times;</button>
+      <div class="full-letter-content">
+        <h2 class="letter-modal-title">To My Dearest Sharmila 🌹</h2>
+        <hr class="gold-divider">
+        <div id="full-letter-body-target"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Local Messages Log Modal -->
+  <div id="messages-log-modal" class="modal-overlay hidden">
+    <div class="modal-card glass modal-large">
+      <button class="modal-close-btn" id="close-log-modal">&times;</button>
+      <h3><i class="fa-solid fa-envelope-open"></i> Messages Sent To Shyam</h3>
+      <div id="messages-list-container" class="messages-list">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
